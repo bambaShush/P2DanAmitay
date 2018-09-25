@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="statsContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="statsContainer" stylesheets="@style/WarStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="War.View.StatisticsWindowController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="exitButton" mnemonicParsing="false" text="Exit" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <GridPane id="statsSheet" alignment="CENTER" styleClass="Sheet" stylesheets="@style/WarStyle.css" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label id="statLabel" alignment="CENTER" styleClass="Label" stylesheets="@style/WarStyle.css" text="Launched Missiles:" textAlignment="CENTER" />
+            <Label id="statLabel" fx:id="launchedMissilesLabel" alignment="CENTER" styleClass="Label" stylesheets="@style/WarStyle.css" text="0" textAlignment="CENTER" GridPane.columnIndex="1" />
+            <Label id="statLabel" alignment="CENTER" styleClass="Label" stylesheets="@style/WarStyle.css" text="Missiles Hits:" textAlignment="CENTER" GridPane.rowIndex="1" />
+            <Label id="statLabel" fx:id="missileHitsLabel" alignment="CENTER" styleClass="Label" stylesheets="@style/WarStyle.css" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label id="statLabel" alignment="CENTER" styleClass="Label" stylesheets="@style/WarStyle.css" text="Destructed Missiles:" textAlignment="CENTER" GridPane.rowIndex="2" />
+            <Label id="statLabel" fx:id="destructedMissilesLabel" alignment="CENTER" styleClass="Label" stylesheets="@style/WarStyle.css" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label id="statLabel" styleClass="Label" stylesheets="@style/WarStyle.css" text="Destructed Launchers:" GridPane.rowIndex="3" />
+            <Label id="statLabel" fx:id="destructedLaunchersLabel" styleClass="Label" stylesheets="@style/WarStyle.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label id="statLabel" layoutX="62.0" layoutY="93.0" styleClass="Label" stylesheets="@style/WarStyle.css" text="Total Damage:" GridPane.rowIndex="4" />
+            <Label id="statLabel" fx:id="totalDamageLabel" layoutX="453.0" layoutY="93.0" styleClass="Label" stylesheets="@style/WarStyle.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <ImageView id="title" fitHeight="150.0" fitWidth="601.0" pickOnBounds="true" preserveRatio="true" styleClass="title" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

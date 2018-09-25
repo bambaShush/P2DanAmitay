@@ -1,0 +1,45 @@
+
+.button{
+    -fx-background-color: #ef39ff;
+    -fx-text-fill: #000000;
+    -fx-font-family: Chiller;
+    -fx-font-size: 21px;
+
+}
+
+.container{
+    -fx-background-image: url("/War/View/images/backgroundSnapshot.PNG");
+}
+
+.weapon{
+    -fx-effect: dropshadow(three-pass-box, rgba(6, 6, 6, 0.8), 10, 0, 0, 0);
+}
+
+.topText{
+    -fx-text-fill: black;
+    -fx-font-family: Chiller;
+    -fx-font-size: 20px;
+}
+
+.title{
+    -fx-image: url("/War/View/images/statsTitle.PNG");
+}
+.statLabel{
+    -fx-font-family: Chiller;
+    -fx-font-size: 25px;
+}
+.statsContainer{
+    -fx-background-image: url("/War/View/images/statsBackground.jpg");
+}
+
+.Label{
+    -fx-font-family: Chiller;
+    -fx-text-fill: #00ffeb;
+    -fx-font-size: 30px;
+}
+
+.Sheet{
+    -fx-background-image: url("/War/View/images/statsBackground.jpg");
+    -fx-border-width: 1;
+    -fx-border-color: BLACK;
+}

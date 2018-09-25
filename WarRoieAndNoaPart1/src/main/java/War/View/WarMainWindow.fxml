@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="1030.0" style="-fx-background-image: url('/War/View/images/backgroundSnapshot.PNG');" styleClass="container" stylesheets="@style/WarStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="War.View.MainWindowController">
+   <right>
+      <VBox fx:id="targetsBox" prefHeight="470.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <VBox prefHeight="432.0" prefWidth="208.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addLauncherButton" alignment="BOTTOM_CENTER" minWidth="202.0" mnemonicParsing="false" onAction="#addLauncher" text="Add Launcher" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="addPlane" alignment="BOTTOM_CENTER" minWidth="202.0" mnemonicParsing="false" onAction="#addPlaneLauncherDestructor" text="Add Plane" VBox.vgrow="ALWAYS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="addShip" alignment="BOTTOM_CENTER" minWidth="202.0" mnemonicParsing="false" onAction="#addShipLauncherDestructor" text="Add Ship" VBox.vgrow="ALWAYS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" minWidth="202.0" mnemonicParsing="false" onAction="#addMissileDestructor" text="Add Missile Destructor" VBox.vgrow="ALWAYS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" minWidth="202.0" mnemonicParsing="false" onAction="#launchMissile" text="Launch  a Missile" VBox.vgrow="ALWAYS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" minWidth="202.0" mnemonicParsing="false" onAction="#destructMissile" text="Destruct a Missile" VBox.vgrow="ALWAYS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" minWidth="202.0" mnemonicParsing="false" onAction="#destructLauncher" text="Destruct a Launcher" VBox.vgrow="ALWAYS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BOTTOM_CENTER" minWidth="202.0" mnemonicParsing="false" onAction="#addTarget" text="Add Target" VBox.vgrow="ALWAYS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
+   </left>
+   <center>
+      <BorderPane id="battleField" fx:id="battleField" prefHeight="331.0" prefWidth="800.0" style=": ;" styleClass="battleField" stylesheets="@style/WarStyle.css" BorderPane.alignment="CENTER">
+         <top>
+            <HBox id="planesBox" fx:id="planesBox" prefHeight="77.0" prefWidth="830.0" styleClass="planesBox" stylesheets="@style/WarStyle.css" BorderPane.alignment="CENTER">
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+            </HBox>
+         </top>
+         <left>
+            <VBox id="launchersBox" fx:id="launchersBox" prefHeight="200.0" prefWidth="100.0" styleClass="launchersBox" stylesheets="@style/WarStyle.css" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox id="missileDestructorsBox" fx:id="missileDestructorsBox" prefHeight="200.0" prefWidth="100.0" styleClass="missileDestructorsBox" stylesheets="@style/WarStyle.css" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </center>
+   <top>
+      <HBox fx:id="infoBox" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="45.0" stylesheets="@style/WarStyle.css" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox fx:id="shipsBox" prefHeight="98.0" prefWidth="1030.0" styleClass="shipsBox" stylesheets="@style/WarStyle.css" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

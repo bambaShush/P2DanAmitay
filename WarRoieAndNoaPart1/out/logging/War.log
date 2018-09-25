@@ -1,0 +1,27 @@
+07/09/2018 00:19:18 [INFO]: HideableLauncher    [L101] CREATED
+07/09/2018 00:19:19 [INFO]: Launcher            [L102] CREATED
+07/09/2018 00:19:19 [INFO]: Launcher            [L103] CREATED
+07/09/2018 00:19:20 [INFO]: LauncherDestructor  [LD10] CREATED
+07/09/2018 00:19:20 [INFO]: LauncherDestructor  [LD11] CREATED
+07/09/2018 00:19:21 [INFO]: LauncherDestructor  [LD12] CREATED
+07/09/2018 00:19:21 [INFO]: LauncherDestructor  [LD13] CREATED
+07/09/2018 00:19:21 [INFO]: LauncherDestructor  [LD14] CREATED
+07/09/2018 00:19:22 [INFO]: LauncherDestructor  [LD15] CREATED
+07/09/2018 00:19:22 [INFO]: LauncherDestructor  [LD16] CREATED
+07/09/2018 00:19:22 [INFO]: LauncherDestructor  [LD17] CREATED
+07/09/2018 00:19:26 [INFO]: MissileDestructor   [D201] CREATED
+07/09/2018 00:19:26 [INFO]: MissileDestructor   [D202] CREATED
+07/09/2018 00:19:27 [INFO]: MissileDestructor   [D203] CREATED
+07/09/2018 00:19:27 [INFO]: MissileDestructor   [D204] CREATED
+07/09/2018 00:19:38 [INFO]: HideableLauncher    [L101] Launched a missile at: 21, Destination:Target #2
+07/09/2018 00:19:43 [INFO]: MissileDestructor   [D202] Try to destruct missile: M1 at: 26
+07/09/2018 00:19:44 [INFO]: HideableLauncher    [L101] Missile Hit! damage: 234.0 at: 27
+07/09/2018 00:19:58 [INFO]: LauncherDestructor  [LD11] Trying to destruct launcher L101 at: 42
+07/09/2018 00:20:03 [INFO]: LauncherDestructor  [LD11] Destruction of launcher L101: Missed! at: 47
+07/09/2018 00:20:09 [INFO]: LauncherDestructor  [LD11] Trying to destruct launcher L102 at: 53
+07/09/2018 00:20:12 [INFO]: LauncherDestructor  [LD11] Destruction of launcher L102: Succeeded! at: 56
+07/09/2018 00:20:33 [INFO]: Launcher            [L103] Launched a missile at: 76, Destination:Target #1
+07/09/2018 00:20:37 [INFO]: Launcher            [L103] Missile Hit! damage: 876.0 at: 80
+07/09/2018 00:20:45 [INFO]: Launcher            [L103] Launched a missile at: 88, Destination:Target #3
+07/09/2018 00:20:49 [INFO]: MissileDestructor   [D202] Try to destruct missile: M3 at: 92
+07/09/2018 00:20:50 [INFO]: MissileDestructor   [D202] Destruction of missile M3: Succeeded!

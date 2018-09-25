@@ -1,0 +1,5 @@
+07/09/2018 00:19:20 [INFO]: LauncherDestructor  [LD11] CREATED
+07/09/2018 00:19:58 [INFO]: LauncherDestructor  [LD11] Trying to destruct launcher L101 at: 42
+07/09/2018 00:20:03 [INFO]: LauncherDestructor  [LD11] Destruction of launcher L101: Missed! at: 47
+07/09/2018 00:20:09 [INFO]: LauncherDestructor  [LD11] Trying to destruct launcher L102 at: 53
+07/09/2018 00:20:12 [INFO]: LauncherDestructor  [LD11] Destruction of launcher L102: Succeeded! at: 56
