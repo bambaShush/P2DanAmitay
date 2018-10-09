@@ -19,6 +19,14 @@
    <left>
       <VBox prefHeight="432.0" prefWidth="208.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
+			<Label fx:id="lblClient" alignment="BOTTOM_CENTER" minWidth="69.0" mnemonicParsing="false" text="Client" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
             <Button fx:id="addLauncherButton" alignment="BOTTOM_CENTER" minWidth="202.0" mnemonicParsing="false" onAction="#addLauncher" text="Add Launcher" textAlignment="CENTER" VBox.vgrow="ALWAYS">
                <cursor>
                   <Cursor fx:constant="HAND" />
