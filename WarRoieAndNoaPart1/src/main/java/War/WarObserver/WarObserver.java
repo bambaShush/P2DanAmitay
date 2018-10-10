@@ -12,5 +12,6 @@ public interface WarObserver {
     Void tryToDestructLauncher(LauncherDestructor launcherDestructor, Launcher launcher, int time);
     Void launcherDestructed(LauncherDestructor launcherDestructor, Launcher launcher);
     Void launcherWasHidden(LauncherDestructor launcherDestructor, Launcher launcher);
+    Void setServerMessage(String message);
     Void endOfWar();
 }

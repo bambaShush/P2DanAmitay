@@ -29,7 +29,7 @@ public class WarController extends WarObservable implements WarControllerFacade{
 
     private Statistics statistics = new Statistics();
 
-
+    
     private ExecutorService executorService = Executors.newCachedThreadPool();
 
     private WarController(){
@@ -52,7 +52,10 @@ public class WarController extends WarObservable implements WarControllerFacade{
         executorService.submit(launcherController);
 
         missileLaunchers.put(launcher, launcherController);
-
+        
+        //add here request to server
+        new Client(new Object());
+        
         publish(subscriber -> subscriber.launcherWasAdded(launcher));
     }
 

@@ -181,7 +181,15 @@ public class FXViewSubscriber implements WarObserver {
         return null;
     }
 
+    @Override
+	public Void setServerMessage(String message) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+    
     private void setFxController(MainWindowController fxController) {
         this.fxController = fxController;
     }
+
+	
 }
